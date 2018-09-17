@@ -1,5 +1,6 @@
 var clickdistance;
 //var sound;
+//var s;
 
 function setup(){
     createCanvas(720,480);
@@ -25,6 +26,7 @@ function circles(){
     for(var i = 0; i < 30; i ++){
 		rect (random(width), random(height),random(20,40),random(20,50));
 	}
+	//s = s - 0.5;
 }
 
 function mouseClicked(){
