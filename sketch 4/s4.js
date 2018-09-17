@@ -19,6 +19,7 @@ function draw() {
 }
 
 function mouseClicked(){
+  //I tried random&mouseXY, but it shows in one color
  if(mouseX < width/2 || mouseY <height/2){
     fill(random(0,255), random(255,0), 0, 30);
   } else{
