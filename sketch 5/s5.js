@@ -14,7 +14,8 @@ function setup(){
 }
 
 function draw(){
-  //every time the animation run, all the shapes will be clear (reset the background every second)
+  //every time the animation run, all the shapes will be clear
+  // (reset the background every second)
   //ctx.clearRect(0, 0, w, h);
   for(var i = 0; i < linesNum; i++){
     var temp = lines [i];
