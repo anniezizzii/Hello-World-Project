@@ -11,20 +11,20 @@ function draw() {
   rotate(r);
   stroke(mouseX, mouseY);
   strokeWeight(1);
-
   for(var t = 0; t< 10; t++){
     ellipse(t*20, 0, mouseY/(t+1), mouseX/(t+1));
   } 
   r = r + 0.5;
+  fill(mouseX, mouseY, 0, 30);
 }
 
 function mouseClicked(){
   //I tried random&mouseXY, but it shows in one color
- if(mouseX < width/2 || mouseY <height/2){
-    fill(random(0,255), random(255,0), 0, 30);
-  } else{
-    fill(mouseX, 0, mouseY, 30);
-  }
+ // if(mouseX < width/2 || mouseY <height/2){
+ //    fill(random(0,255), random(255,0), 0, 30);
+ //  } else{
+ //    fill(mouseX, 0, mouseY, 30);
+ //  }
 
   background(0);
 }
